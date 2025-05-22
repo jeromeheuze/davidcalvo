@@ -17,8 +17,8 @@ body.olive {
     background-color: #4c4b33;
 }
 body.red {
-    background-image: url(images2/pinstripes.gif);
-    background-color: #696983;
+    background-image: url(images2/darkgrey_pinstripes.gif);
+    background-color: #6f6f85;
 }
 
 .col-xs-12.no-gutter {
@@ -44,7 +44,7 @@ body.olive main {
     border: solid 2px #6b6b4a;
 }
 body.red main {
-    background-color: #696983;
+    background-color: #ccccfe;
     border: solid 2px #990000;
 }
 
@@ -60,7 +60,7 @@ body.olive .box_0 {
     border: solid 3px #133b00;
 }
 body.red .box_0 {
-    background-color: #696983;
+    background-color: #ccccfe;
     border: solid 3px #990000;
 }
 .box_0_inner {
@@ -76,7 +76,7 @@ body.olive .box_0_inner {
     margin: 10px 5px 0 5px;
 }
 body.red .box_0_inner {
-    background-color: #696983;
+    background-color: #ccccfe;
     border: solid 3px #990000;
     margin: 10px 5px 0 5px;
 }
@@ -96,6 +96,7 @@ body.blue .box_img_border {
 }
 .hero .box_img {
     padding: 10px;
+    min-width: 395px;
 }
 body.blue .hero .box_img {
     background-color: #365066;
@@ -317,6 +318,9 @@ body.red .menu-desktop nav ul li a {
     padding: 5px;
     background: #6b7256;
 }
+.content.red {
+    color: #400000;
+}
 
 h2 {
     margin-top: 3px;
@@ -379,6 +383,9 @@ blockquote p:last-of-type {
     text-align: right;
     font-size: 0.95em;
 }
+.hide-mobile {
+    display: block;
+}
 
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
@@ -394,11 +401,15 @@ blockquote p:last-of-type {
     }
     .hero .box_img {
         width: 100%;
+        min-width: 100%;
         height: auto;
     }
     .main_box {
         width: 100%;
         height: auto;
+    }
+    .hide-mobile {
+        display: none;
     }
 }
 
@@ -414,11 +425,16 @@ blockquote p:last-of-type {
     .main_box {
         width: auto;
     }
+    .hide-mobile {
+        display: none;
+    }
 }
 
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 768px) and (max-width: 1024px) {
-
+    .hide-mobile {
+        display: none;
+    }
 }
 
 /* Media Query for Laptops and Desktops */
