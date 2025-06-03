@@ -30,10 +30,13 @@ body.red {
     margin: 0 auto;
     width: 790px;
 }
+.main_box.fluid {
+    width: 76rem;
+}
 
 main {
     margin-top: 45px;
-    padding: 20px;
+    padding: 20px 40px;
 }
 body.blue main {
     background-color: #7b91b2;
@@ -78,7 +81,8 @@ body.olive .box_0_inner {
 body.red .box_0_inner {
     background-color: #ccccfe;
     border: solid 3px #990000;
-    margin: 10px 5px 0 5px;
+    margin: 10px 5px 20px 5px;
+    border-bottom: solid 5px #400000;
 }
 
 .tagline {
@@ -87,6 +91,16 @@ body.red .box_0_inner {
 .hero {
     margin-bottom: 10px;
 }
+.hero.red {
+    padding: 0;
+    background-color: #990000;
+    color: #fff;
+    margin-bottom: 0;
+}
+.hero.red h2 { color: #fff; }
+.hero.red blockquote { color: #400000; background: transparent; border: none; }
+.hero.red blockquote p { color: #fff; background: transparent; }
+
 .hero .box_img_border {
     padding: 5px;
     margin: 0 auto;
@@ -173,6 +187,7 @@ body.blue .menu-desktop {
 body.red .menu-desktop {
     background-color: #990000;
     border: solid 2px #590000;
+    margin-left: 5px;
 }
 .menu-desktop button {
     display: block;
