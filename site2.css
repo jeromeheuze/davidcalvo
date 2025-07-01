@@ -124,13 +124,14 @@ body.blue .hero .box_img {
     margin: 0 auto;
 }
 .ornament_grid {
-    background: url(images2/ornament_background.jpg) 0 0 no-repeat;
+    background: url(images2/ornament_background.jpg) 17px 0 no-repeat;
+    background-size: contain;
 }
 .image-grid {
-    margin: 25px auto;
+    margin: 17px auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* spacing between images */
+    gap: 17px; /* spacing between images */
     justify-content: center; /* optional: centers the grid */
 }
 
@@ -418,6 +419,9 @@ blockquote p:last-of-type {
         width: 100%;
         min-width: 100%;
         height: auto;
+    }
+    main {
+        padding: 0 0 0 0;
     }
     .main_box {
         width: 100%;
