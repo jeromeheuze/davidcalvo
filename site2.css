@@ -408,6 +408,9 @@ blockquote p:last-of-type {
     body {
         font-size: 18px;
     }
+    body.stripped {
+        padding-top: 0;
+    }
     h1 {
         text-align: center;
         font-size: 100%;
@@ -436,6 +439,9 @@ blockquote p:last-of-type {
 @media (min-width: 481px) and (max-width: 767px) {
     body {
         font-size: 18px;
+    }
+    body.stripped {
+        padding-top: 0;
     }
     h1 {
         text-align: center;

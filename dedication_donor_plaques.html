@@ -31,8 +31,37 @@
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="flexboxgrid.min.css">
-    <link rel="stylesheet" href="site2.css?v=1.0.017">
-
+    <link rel="stylesheet" href="site2.css?v=1.0.020">
+    <style>
+        .inner_ornament_grid {
+            position: relative;
+            min-height: 750px;
+        }
+        .donor_plaques {
+            position: absolute;
+            left: 78px;
+            top: -27px;
+        }
+        .donors_grid {
+            position: absolute;
+            left: 136px;
+            top: 205px;
+            z-index: 99;
+            width: 400px;
+        }
+        /* Media Query for Mobile Devices */
+        @media (max-width: 480px) {
+            .donor_plaques {
+                display: none;
+            }
+        }
+        /* Media Query for low resolution  Tablets, Ipads */
+        @media (min-width: 481px) and (max-width: 767px) {
+            .donor_plaques {
+                display: none;
+            }
+        }
+    </style>
     <!-- Global Site Tag (gtag.js) - Google Analytics
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-19275879-1"></script>
     <script>
@@ -52,19 +81,22 @@
             <div class="h1"><h1>WOOD CARVED PLAQUES</h1></div>
             <div class="box_0">
                 <div class="box_0_inner">
-                    <div class="tagline"><h2>"Forty-Three Years of Professional Wood Carving"</h2></div>
+                    <!--<div class="tagline"><h2>"Forty-Three Years of Professional Wood Carving"</h2></div>-->
                     <div class="row center-xs" style="margin:10px 0 5px 0;">
-                        <div class="ornament_grid col-xs-12">
-                            <div class="image-grid">
-                                <a href="plaques_cat_doctor.html"><img class="size_1" src="images2/plaques_middle_cat.jpg" width="87" height="80" alt=""></a>
-                                <a href="plaques_swan.html"><img class="size_1" src="images2/plaques_middle_swan.jpg" width="87" height="80" alt=""></a>
-                                <a href="plaques_shapiro.html"><img class="size_1" src="images2/plaques_middle_shapiro.jpg" width="87" height="80" alt=""></a>
-                                <a href="plaques_walter.html"><img class="size_1" src="images2/plaques_middle_walter.jpg" width="86" height="80" alt=""></a>
-                                <a href="plaques_murr.html"><img class="size_1" src="images2/plaques_middle_murr.jpg" width="87" height="80" alt=""></a>
-                                <a href="plaques_trustee.html"><img class="size_1" src="images2/plaques_middle_trustee.jpg" width="85" height="80" alt=""></a>
-                                <a href="plaques_barnaby.html"><img class="size_1" src="images2/plaques_middle_barnaby.jpg" width="86" height="78" alt=""></a>
-                                <a href="plaques_yacht_club.html"><img class="size_1" src="images2/plaques_middle_yacht_club.jpg" width="88" height="80" alt=""></a>
-                                <a href="plaques_war_memorial.html"><img class="size_1" src="images2/plaques_middle_war_memorial.jpg" width="87" height="79" alt=""></a>
+                        <div class="col-xs-12">
+                            <div class="inner_ornament_grid">
+                                <div class="donor_plaques"><img src="images2/donor_plaques_516x750.png" alt="donor_plaques_main" width="516" height="750" /></div>
+                                <div class="donors_grid image-grid">
+                                    <a href="plaques_cat_doctor.html"><img class="size_1" src="images2/plaques_middle_cat.jpg" width="87" height="80" alt=""></a>
+                                    <a href="plaques_swan.html"><img class="size_1" src="images2/plaques_middle_swan.jpg" width="87" height="80" alt=""></a>
+                                    <a href="plaques_shapiro.html"><img class="size_1" src="images2/plaques_middle_shapiro.jpg" width="87" height="80" alt=""></a>
+                                    <a href="plaques_walter.html"><img class="size_1" src="images2/plaques_middle_walter.jpg" width="86" height="80" alt=""></a>
+                                    <a href="plaques_murr.html"><img class="size_1" src="images2/plaques_middle_murr.jpg" width="87" height="80" alt=""></a>
+                                    <a href="plaques_trustee.html"><img class="size_1" src="images2/plaques_middle_trustee.jpg" width="85" height="80" alt=""></a>
+                                    <a href="plaques_barnaby.html"><img class="size_1" src="images2/plaques_middle_barnaby.jpg" width="86" height="78" alt=""></a>
+                                    <a href="plaques_yacht_club.html"><img class="size_1" src="images2/plaques_middle_yacht_club.jpg" width="88" height="80" alt=""></a>
+                                    <a href="plaques_war_memorial.html"><img class="size_1" src="images2/plaques_middle_war_memorial.jpg" width="87" height="79" alt=""></a>
+                                </div>
                             </div>
                         </div>
                     </div>

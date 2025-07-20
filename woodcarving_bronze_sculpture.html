@@ -32,7 +32,25 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="flexboxgrid.min.css">
     <link rel="stylesheet" href="site2.css?v=1.0.017">
-
+    <style>
+        .sculpture_angel {
+            position: absolute;
+            right: -40px;
+            top: -65px;
+        }
+        /* Media Query for Mobile Devices */
+        @media (max-width: 480px) {
+            .sculpture_angel {
+                display: none;
+            }
+        }
+        /* Media Query for low resolution  Tablets, Ipads */
+        @media (min-width: 481px) and (max-width: 767px) {
+            .sculpture_angel {
+                display: none;
+            }
+        }
+    </style>
     <!-- Global Site Tag (gtag.js) - Google Analytics
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-19275879-1"></script>
     <script>
@@ -43,7 +61,6 @@
 
       gtag('config', 'UA-19275879-1');
     </script>-->
-
 </head>
 <body class="stripped olive">
 <main class="main_box container">
@@ -55,7 +72,7 @@
                     <div class="tagline"><h2>"Forty-Three Years of Professional Wood Carving"</h2></div>
                     <div class="row center-xs" style="margin:10px 0 5px 0;">
                         <div class="col-xs-12" style="position: relative;">
-                            <div class="sculpture_angel" style="position: absolute;right: -40px;top: -65px;"><img style="width: 373px;" src="images2/sculpture_angels_main.png" alt="sculpture_angels_main" /></div>
+                            <div class="sculpture_angel"><img style="width: 373px;" src="images2/sculpture_angels_main.png" alt="sculpture_angels_main" /></div>
                             <div class="image-grid" style="justify-content: left;padding-left: 17px;">
                                 <a href="sculpture_fireplace.html"><img class="size_1" src="images2/sculpture_thumb_rower.jpg" width="85" height="156" alt=""></a>
                                 <a href="sculpture_coat_of_arms.html"><img class="size_1" src="images2/sculpture_thumb_coat_of_arms.jpg" width="80" height="155" alt=""></a>
